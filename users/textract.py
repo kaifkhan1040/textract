@@ -12,6 +12,7 @@ def get_kv_map(file_name):
         bytes_test = bytearray(img_test)
         print('Image loaded', file_name)
 
+
     # process using image bytes
     # session = boto3.Session(profile_name='textract')
     client = boto3.client('textract', region_name='ap-south-1', aws_access_key_id=settings.AWS_ACCESS_KEY_ID,aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY)
